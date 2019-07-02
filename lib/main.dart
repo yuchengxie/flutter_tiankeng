@@ -1,3 +1,4 @@
+import 'package:app_tiankeng/httpdemo/http_demo.dart';
 import 'package:app_tiankeng/pages/bloc/bloc_demo.dart';
 import 'package:app_tiankeng/pages/db/db_demo.dart';
 import 'package:app_tiankeng/pages/page1.dart';
@@ -13,7 +14,7 @@ main() {
   // runApp(MyApp());
   runApp(MaterialApp(
     // home: Tabs(), // becomes the route named '/'
-    initialRoute: '/bloc',
+    initialRoute: '/httpdemo',
     routes: <String, WidgetBuilder>{
       '/': (BuildContext context) => Tabs(),
       '/a': (BuildContext context) => PageOne(),
@@ -24,6 +25,7 @@ main() {
       '/rxdart': (context) => RxDartDemo(),
       '/bloc': (context) => BlocDemo(),
       '/db':(context)=>DbDemo(),
+      '/httpdemo':(context)=>HttpDemo(),
     },
     theme: ThemeData(
       primarySwatch: Colors.cyan,

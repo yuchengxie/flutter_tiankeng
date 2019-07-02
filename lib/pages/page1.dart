@@ -101,10 +101,10 @@ class _PageOneState extends State<PageOne> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   RaisedButton(
-                    child: Text('shared_preferences'),
+                    child: Text('httpDemo'),
                     onPressed: () {
                       // Navigator.popAndPushNamed(context, '/p');
-                      Navigator.pushNamed(context, '/db');
+                      Navigator.pushNamed(context, '/httpdemo');
                     },
                   )
                 ],
@@ -116,3 +116,4 @@ class _PageOneState extends State<PageOne> {
     );
   }
 }
+
